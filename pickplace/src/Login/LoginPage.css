@@ -1,0 +1,97 @@
+/* src/components/user/LoginPage.css */
+.login-page .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 100%;
+  background-color: #ffffff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.login-page .login-card {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.login-page .login-form {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-page .login-form h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #42A5F5; /* 변경된 색상 */
+}
+
+.login-page .login-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-page .login-form-group label {
+  display: block;
+  font-size: 0.875rem;
+  color: #42A5F5; /* 변경된 색상 */
+}
+
+.login-page .login-form-control {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #42A5F5; /* 변경된 색상 */
+  background: none;
+  outline: none;
+  color: #42A5F5; /* 변경된 색상 */
+}
+
+.login-page .login-form-control::placeholder {
+  color: #90CAF9; /* 변경된 색상 */
+}
+
+/* 버튼 스타일 */
+.login-page .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-page .btn-primary {
+  background-color: #42A5F5; /* 변경된 색상 */
+  color: #ffffff;
+}
+
+.login-page .btn-primary:hover {
+  background-color: #64B5F6; /* 변경된 색상 */
+}
+
+.login-page .btn-secondary {
+  background-color: #64B5F6; /* 변경된 색상 */
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.login-page .btn-secondary:hover {
+  background-color: #90CAF9; /* 변경된 색상 */
+}
+

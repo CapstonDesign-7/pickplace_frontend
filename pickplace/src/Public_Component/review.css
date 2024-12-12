@@ -1,0 +1,168 @@
+/* 메인 컨테이너 */
+.review-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  user-select: none;
+  margin-top: 75px;
+}
+
+/* 검색 영역 */
+.search-container {
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+/* 리뷰 그리드 */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 리뷰 카드 */
+.review-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.review-title {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* 좋아요 버튼 */
+.like-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #666;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.like-button.liked {
+  color: #ff4757;
+}
+
+.like-button:hover {
+  color: #ff4757;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  flex-grow: 1;
+}
+
+.page-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-button:hover {
+  background-color: #f0f0f0;
+}
+
+.page-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .review-card {
+    height: auto;
+    min-height: 350px;
+  }
+}
+
+.review-filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.location-buttons {
+  margin-bottom: 10px;
+}
+
+.category-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.category-buttons .btn {
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.sort-options .btn {
+  padding: 0.25rem 0.5rem;
+}

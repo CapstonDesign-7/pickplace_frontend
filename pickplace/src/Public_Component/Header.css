@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000;
+    user-select: none;
+  }
+  
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .pickplace_logo {
+    height: 60px;
+    width: auto;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+  }
+  
+  .header-navLink {
+    color: #000000 !important;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    font-weight: 540;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .header-navLink:hover {
+    color: #333333 !important;
+  }
+  
+  /* 반응형 디자인을 위한 미디어 쿼리 */
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      text-align: center;
+      width: 90%;
+    }
+    
+    .pickplace_logo {
+      height: 50px;
+      margin-left: 0;
+    }
+    
+    .navbar {
+      margin-top: 15px;
+      margin-right: 0;
+      justify-content: center;
+    }
+    
+    .header-navLink {
+      margin: 10px;
+    }
+  }
+  
+  .custom-dropdown-toggle::after {
+    display: none;
+  }
+  
+  .header-user-icon {
+    margin-right: 10px;
+    color: #333;
+    cursor: pointer;
+    vertical-align: middle;
+  }
